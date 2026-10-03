@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Delete Your Habito Account</title>
+
+    <meta
+        name="description"
+        content="Request deletion of your Habito – Daily Habit Tracker account and associated data."
+    >
+
+    <style>
+        :root {
+            --primary: #3949ff;
+            --primary-dark: #2935c7;
+            --background: #f5f7ff;
+            --card: #ffffff;
+            --text: #171923;
+            --secondary: #626779;
+            --border: #e4e7f0;
+            --success-bg: #eefaf3;
+            --success-border: #42a875;
+            --warning-bg: #fff8e8;
+            --warning-border: #e5a928;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: min(900px, calc(100% - 32px));
+            margin: 40px auto;
+        }
+
+        .header {
+            background: linear-gradient(
+                135deg,
+                #3444ff,
+                #5865f2
+            );
+
+            color: #ffffff;
+            padding: 48px 36px;
+            border-radius: 24px;
+            margin-bottom: 24px;
+
+            box-shadow:
+                0 14px 35px rgba(57, 73, 255, 0.20);
+        }
+
+        .logo {
+            width: 58px;
+            height: 58px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.18);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 28px;
+            font-weight: 800;
+
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0 0 10px;
+            font-size: 34px;
+            line-height: 1.2;
+        }
+
+        .header p {
+            margin: 7px 0;
+            opacity: 0.92;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+
+            padding: 34px 36px;
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 5px 18px rgba(20, 25, 50, 0.04);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+            line-height: 1.3;
+        }
+
+        h3 {
+            margin-top: 26px;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul,
+        ol {
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .steps {
+            counter-reset: step;
+        }
+
+        .step {
+            display: flex;
+            gap: 16px;
+            margin: 20px 0;
+        }
+
+        .step-number {
+            flex: 0 0 38px;
+            height: 38px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--primary);
+            color: #ffffff;
+
+            border-radius: 50%;
+
+            font-weight: 700;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .email-box {
+            background: #eef0ff;
+            border: 1px solid #d8dcff;
+
+            border-radius: 16px;
+
+            padding: 22px;
+
+            margin: 22px 0;
+
+            text-align: center;
+        }
+
+        .email-button {
+            display: inline-block;
+
+            background: var(--primary);
+            color: #ffffff;
+
+            padding: 14px 24px;
+
+            border-radius: 12px;
+
+            font-weight: 700;
+
+            text-decoration: none;
+
+            margin-top: 10px;
+        }
+
+        .email-button:hover {
+            background: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        .success {
+            background: var(--success-bg);
+            border-left: 4px solid var(--success-border);
+
+            padding: 18px;
+
+            border-radius: 10px;
+
+            margin: 20px 0;
+        }
+
+        .warning {
+            background: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+
+            padding: 18px;
+
+            border-radius: 10px;
+
+            margin: 20px 0;
+        }
+
+        .email-address {
+            font-weight: 700;
+            color: var(--primary);
+            word-break: break-word;
+        }
+
+        .footer {
+            text-align: center;
+
+            color: var(--secondary);
+
+            font-size: 14px;
+
+            padding: 20px 10px 40px;
+        }
+
+        a {
+            color: var(--primary);
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: calc(100% - 20px);
+                margin: 16px auto;
+            }
+
+            .header {
+                padding: 34px 24px;
+                border-radius: 20px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .card {
+                padding: 26px 22px;
+                border-radius: 16px;
+            }
+
+            h2 {
+                font-size: 21px;
+            }
+
+            .step {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            H
+        </div>
+
+        <h1>
+            Delete Your Habito Account
+        </h1>
+
+        <p>
+            Habito – Daily Habit Tracker
+        </p>
+
+        <p>
+            Request deletion of your Habito account and associated data.
+        </p>
+
+    </header>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="card">
+
+        <h2>
+            Account Deletion Request
+        </h2>
+
+        <p>
+            If you no longer want to use Habito, you can request deletion
+            of your Habito account and associated account data.
+        </p>
+
+        <p>
+            Habito currently processes account deletion requests manually
+            to help ensure that the correct account and associated data
+            are deleted.
+        </p>
+
+        <div class="success">
+
+            <strong>
+                Your request is important to us.
+            </strong>
+
+            <br>
+
+            We aim to complete account deletion requests
+            within <strong>30 days</strong> after receiving and
+            verifying your request.
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW TO DELETE -->
+
+    <section class="card">
+
+        <h2>
+            How to Request Account Deletion
+        </h2>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">
+                    1
+                </div>
+
+                <div class="step-content">
+
+                    <strong>
+                        Use your registered email address
+                    </strong>
+
+                    <p>
+                        Send the request from the email address associated
+                        with your Habito account.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    2
+                </div>
+
+                <div class="step-content">
+
+                    <strong>
+                        Send an account deletion request
+                    </strong>
+
+                    <p>
+                        Send an email requesting deletion of your
+                        Habito account and associated data.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    3
+                </div>
+
+                <div class="step-content">
+
+                    <strong>
+                        We verify your request
+                    </strong>
+
+                    <p>
+                        We may verify that the request was submitted by
+                        the owner of the Habito account before processing
+                        the deletion.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    4
+                </div>
+
+                <div class="step-content">
+
+                    <strong>
+                        Your account is deleted
+                    </strong>
+
+                    <p>
+                        After verification, we will delete the Habito
+                        account and associated account data from our
+                        applicable systems.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EMAIL REQUEST -->
+
+    <section class="card">
+
+        <h2>
+            Send Your Deletion Request
+        </h2>
+
+        <p>
+            Please send your request to:
+        </p>
+
+        <div class="email-box">
+
+            <div class="email-address">
+                onemkcommune@gmail.com
+            </div>
+
+            <a
+                class="email-button"
+                href="mailto:onemkcommune@gmail.com?subject=Habito%20Account%20Deletion%20Request&body=Hello%20Habito%20Support%2C%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20Habito%20account%20and%20associated%20data.%0A%0ARegistered%20email%3A%20%0A%0AThank%20you."
+            >
+                Request Account Deletion
+            </a>
+
+        </div>
+
+        <p>
+            Please use the email address registered with your Habito
+            account whenever possible.
+        </p>
+
+    </section>
+
+
+    <!-- WHAT WILL BE DELETED -->
+
+    <section class="card">
+
+        <h2>
+            What Data Will Be Deleted?
+        </h2>
+
+        <p>
+            Once your deletion request has been verified, we will delete
+            account-associated information that is stored for your Habito
+            account, subject to any information that we are legally
+            required or permitted to retain.
+        </p>
+
+        <p>
+            Depending on your use of Habito, this may include:
+        </p>
+
+        <ul>
+
+            <li>
+                Habito account information
+            </li>
+
+            <li>
+                Firebase Authentication account information
+            </li>
+
+            <li>
+                Email address associated with the account
+            </li>
+
+            <li>
+                Display name associated with the account
+            </li>
+
+            <li>
+                Habits and routines associated with the account
+            </li>
+
+            <li>
+                Habit completion history
+            </li>
+
+            <li>
+                Goals and schedules
+            </li>
+
+            <li>
+                Habit progress and streak information
+            </li>
+
+            <li>
+                XP, points, and achievement information
+            </li>
+
+            <li>
+                Account-associated preferences and application data
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- RETENTION -->
+
+    <section class="card">
+
+        <h2>
+            Deletion Timeline
+        </h2>
+
+        <p>
+            We aim to process verified account deletion requests within
+            <strong>30 days</strong>.
+        </p>
+
+        <p>
+            In some cases, deletion may be completed sooner.
+        </p>
+
+        <p>
+            If additional verification or information is required,
+            we may contact you using the email address associated with
+            your request.
+        </p>
+
+        <div class="warning">
+
+            <strong>
+                Limited legal retention
+            </strong>
+
+            <p>
+                Certain information may need to be retained where required
+                or permitted by applicable law, security requirements,
+                fraud prevention requirements, dispute resolution, or
+                other legitimate legal obligations.
+            </p>
+
+            <p>
+                Any information that must be retained will be limited to
+                the applicable purpose and retained only for the period
+                reasonably necessary.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- AFTER DELETION -->
+
+    <section class="card">
+
+        <h2>
+            What Happens After Deletion?
+        </h2>
+
+        <p>
+            Once your account deletion request has been completed,
+            your Habito account will no longer be available for normal
+            account access.
+        </p>
+
+        <p>
+            Account-associated data stored in our applicable cloud
+            services will be deleted as part of the deletion process,
+            subject to applicable legal retention requirements.
+        </p>
+
+        <p>
+            Data that exists only on your device may remain on the device
+            until you remove the Habito application or clear its local
+            application data.
+        </p>
+
+    </section>
+
+
+    <!-- IMPORTANT -->
+
+    <section class="card">
+
+        <h2>
+            Important Information
+        </h2>
+
+        <ul>
+
+            <li>
+                Account deletion is permanent and cannot normally be undone.
+            </li>
+
+            <li>
+                You should make sure that you want to permanently delete
+                your Habito account before submitting a request.
+            </li>
+
+            <li>
+                Please submit the request using your registered account
+                email address.
+            </li>
+
+            <li>
+                We may request additional information if we need to verify
+                ownership of the account.
+            </li>
+
+            <li>
+                Account deletion does not automatically delete information
+                that you may have independently shared outside Habito.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- PRIVACY POLICY -->
+
+    <section class="card">
+
+        <h2>
+            Privacy Policy
+        </h2>
+
+        <p>
+            For complete information about how Habito collects, uses,
+            stores, and protects information, please review our
+            Privacy Policy.
+        </p>
+
+        <p>
+            <a href="privacy-policy.html">
+                Read Habito Privacy Policy
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="card">
+
+        <h2>
+            Contact Habito Support
+        </h2>
+
+        <p>
+            If you have questions about account deletion or your personal
+            information, contact us at:
+        </p>
+
+        <p>
+            <strong>
+                Email:
+            </strong>
+
+            <a
+                class="email-address"
+                href="mailto:onemkcommune@gmail.com"
+            >
+                onemkcommune@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Please include "Habito Account Deletion Request" in the
+            subject line.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        © 2026 Habito. All rights reserved.
+
+        <br>
+
+        Habito – Daily Habit Tracker
+
+    </footer>
+
+</div>
+
+</body>
+</html>
